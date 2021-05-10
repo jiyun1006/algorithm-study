@@ -2,11 +2,9 @@
 
 big number division 이라는 방법을 사용해 구현하였음.
 
-방법 주소: [Big_number_division][link]
-[link]: https://www.freecodecamp.org/news/find-square-root-of-number-calculate-by
+방법 주소: [Big number division](https://www.freecodecamp.org/news/find-square-root-of-number-calculate-by)
 
-문제 주소: [Code_wars_Big number_square_root][link2]
-[link2]: https://www.codewars.com/kata/58a3fa665973c2a6e80000c4
+문제 주소: [CodeWars Big Number Square Root](https://www.codewars.com/kata/58a3fa665973c2a6e80000c4)
 
 
 ## 어떻게 구현하였는지?
