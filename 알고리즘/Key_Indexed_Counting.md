@@ -1,6 +1,8 @@
 1. compare 기반 sorting은 최대 성능이 O(NlogN)이다.
 2. key index를 기반으로 하는 radix sort가 사용 가능한 경우 최대의 성능을 뽑을 수 있다.
 3. O(N+R) time안에 가능하다. N array 길이 R 키 index의 범위
+4. LSD sorting의 경우 stable 하다는 장점이 있음.
+5. 해당 코드는 stable하게 sorting을 한다.
 
 
 
