@@ -21,66 +21,6 @@
 
 using namespace std;
 
-void radix_sort(vector<int>& arr)
-{
-	int len = arr.size();
-	int maxval = 0;
-	// 가장 큰 value를 찾는다.
-	if (len != 0)
-		for (auto i : arr)
-			maxval = max(i, maxval);
-
-	// 가장 큰 value가 몇자리인지 찾기
-	int digits = 0;
-	while (maxval > 0)
-	{
-		digits++;
-		maxval /= 10;
-	}
-
-	// 가장 큰 자리수에 맞게 padding하기
-
-	for (int i = 0; i < digits; i++)
-	{
-		int power = pow(10, i);
-
-		vector<int> new_arr(len); // update할 array
-
-		// counting sort를 위한 array
-		vector<int> counting(10); // 0~9 digits
-
-		// Calculate frequency 
-		
-		for (int j = 0; j < len; j++)
-		{
-			int num = (arr[j] / power) % 10;
-
-			counting[num]++;
-		}
-
-		// frequency 누적합
-		for (int j = 1; j < 10; j++)
-			counting[j] += counting[j-1];
-
-		for (int j = len - 1; j >= 0; j--)
-		{
-			int num = (arr[j] / power) % 10;
-
-			new_arr[counting[num] - 1] = arr[j];
-			counting[num]--;
-		}
-
-		for (int j = 0; j < len; j++)
-			arr[j] = new_arr[j]; // copy to original
-	}
-
-
-
-
-}
-
-
-
 
 
 void msd_sort(vector<string>& arr, vector<string>& aux, int low, int high, int d)
@@ -88,7 +28,7 @@ void msd_sort(vector<string>& arr, vector<string>& aux, int low, int high, int d
 	if (low >= high)
 		return;
 
-	vector<int> count(258); // ascii 256자이므로 R은 8임 맨끝 맨처음 포함해야하므로 2자리 추가
+	vector<int> count(258); // ascii 256자이므로 R은 256임 맨끝 맨처음 포함해야하므로 2자리 추가
 
 	for (int i = low; i <= high; i++)
 		count[arr[i][d] + 2]++; //문자열에 대한 각각의 문자에 대한 counting
