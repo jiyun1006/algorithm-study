@@ -65,3 +65,31 @@ int main()
 
 
 ```
+
+## 해당 코드의 결과는 아래와 같이 나와야한다.
+
+```
+Harris 1
+Martin 1
+Moore 1
+Anderson 2
+Martinez 2
+Miller 2
+Robinson 2
+White 2
+Brown 3
+Davies 3
+Jackson 3
+Jones 3
+Taylor 3
+Williamson 3
+Garcia 4
+Jonhson 4
+Smith 4
+Thomas 4
+Thompson 4
+Wilson 4
+
+
+
+```
