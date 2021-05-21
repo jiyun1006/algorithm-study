@@ -14,7 +14,7 @@
 ![dfs5](https://www.tutorialspoint.com/data_structures_algorithms/images/dfs_five.jpg)
 
 
-![dfs6](![dfs](https://www.tutorialspoint.com/data_structures_algorithms/images/dfs_six.jpg))
+![dfs6](https://www.tutorialspoint.com/data_structures_algorithms/images/dfs_six.jpg)
 
 
-![dfs11](https://www.tutorialspoint.com/data_structures_algorithms/images/dfs_sevem.jpg)
+![dfs11](https://www.tutorialspoint.com/data_structures_algorithms/images/dfs_seven.jpg)
