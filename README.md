@@ -28,6 +28,3 @@
       |─── READMD.md
       |─── programmers
 ```
-
-*25일까지 *
-
