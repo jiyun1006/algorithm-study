@@ -33,6 +33,42 @@ for j in range(1,length+1):
 
 <br>
 
+- 다시 풀어본 풀이(2번째 품)
+
+**처음 문자를 건너뛰고, 탐색하는 문자의 개수를 늘려가며 해결**
+
+```python
+def solution(s):
+    answer = 1001
+    length = len(s)//2
+
+    if length < 1:
+        return 1
+
+    for j in range(1,length+1):
+        cnt = 0
+        temp = 1
+        ans = ""
+        for i in range(0, len(s), j):
+            if cnt == 0:
+                cnt += 1
+                word = s[i:i+j]
+                continue
+
+            if word == s[i:i+j]:
+                temp += 1
+            else:
+                ans = ans + str(temp) + word if temp >= 2 else ans + word
+                word = s[i:i+j]
+                temp = 1
+
+        ans = ans + str(temp) + word if temp >= 2 else ans + word
+        answer = min(answer, len(ans))
+
+
+    return answer
+```
+
 - 풀이   
 
 **알고리즘 자체는 동일하나, 문자열 자체를 저장함으로써 줄어드는 길이에 대한 복잡함 해소.**   
